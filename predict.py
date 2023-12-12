@@ -124,12 +124,12 @@ def stereo_image_inference(model, img_l, img_r, out_path):
     h, w = img_L.shape[:2]
     fig = plt.figure(figsize=(w // 40, h // 40))
     ax1 = fig.add_subplot(2, 1, 1)
-    plt.title("NAFSSR output (Left)", fontsize=14)
+    plt.title("LIASSR output (Left)", fontsize=14)
     ax1.axis("off")
     ax1.imshow(img_L)
 
     ax2 = fig.add_subplot(2, 1, 2)
-    plt.title("NAFSSR output (Right)", fontsize=14)
+    plt.title("LIASSR output (Right)", fontsize=14)
     ax2.axis("off")
     ax2.imshow(img_R)
 
